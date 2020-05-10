@@ -27,4 +27,4 @@ def predictOneResult():
     return json.dumps(result)
 
 if __name__ == '__main__':
-    BackEndApp.run(debug=False)
+    BackEndApp.run()
