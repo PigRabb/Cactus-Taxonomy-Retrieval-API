@@ -13,6 +13,11 @@ pkl_filename = "cactus_model.pkl"
 with open(pkl_filename, 'rb') as file:
     model = pickle.load(file)
 
+@BackEndApp.route("/")
+def main():
+    return "Hello"
+
+
 @BackEndApp.route("/predict/",methods=['GET'])
 def predictOneResult():
     FT = str(request.args.get("ft"))
